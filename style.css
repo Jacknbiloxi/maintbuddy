@@ -1,0 +1,145 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  max-width: 50%;
+  height: auto;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.nav__item {
+  margin-right: 20px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: #ff6347;
+}
+
+/* Hero styles */
+.hero {
+  background-image: url('https://picsum.photos/id/1018/1200/800');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.hero__text {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff6347;
+}
+
+/* Features styles */
+.features {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.feature__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.feature__item {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.feature__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.feature__text {
+  font-size: 1.2rem;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+
