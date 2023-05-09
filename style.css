@@ -30,7 +30,7 @@ a {
 }
 
 .logo img {
-   max-width: 50%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -67,20 +67,18 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #ffd700;
+  color: #fff;
 }
 
 .hero__title {
   font-family: 'Open Sans', sans-serif;
   font-size: 3rem;
   margin-bottom: 20px;
-  font-weight: bold;
 }
 
 .hero__text {
   font-size: 1.5rem;
   margin-bottom: 40px;
-  font-weight: bold;
 }
 
 .btn {
@@ -106,7 +104,6 @@ a {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  font-weight: bold;
 }
 
 .feature__grid {
@@ -124,7 +121,6 @@ a {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   margin-bottom: 20px;
-  font-weight: bold;
 }
 
 .feature__text {
@@ -139,19 +135,4 @@ a {
   padding: 20px;
 }
 
-/* Responsive styles */
-
-@media screen and (max-width: 767px) {
-
-  .header {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .nav__list {
-    margin-top: 20px;
-  }
-
-  .nav__item {
-    margin: 0 10
 
