@@ -30,7 +30,7 @@ a {
 }
 
 .logo img {
-  max-width: 50%;
+   max-width: 50%;
   height: auto;
 }
 
@@ -59,7 +59,7 @@ a {
 
 /* Hero styles */
 .hero {
-  background-image: url('https://picsum.photos/id/1018/1200/800');
+  background-image: url('https://images.unsplash.com/photo-1503417583691-b1cc6aedfa4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTQzMjJ8MHwxfHNlYXJjaHwxfHxpbmRpYW5zJTIwd29ya2Vyc3xlbnwwfHx8fDE2MzA1MjEwMTA&ixlib=rb-1.2.1&q=80&w=1080');
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -74,15 +74,11 @@ a {
   font-family: 'Open Sans', sans-serif;
   font-size: 3rem;
   margin-bottom: 20px;
-  font-weight: bold;
-  color: #ffd700;
 }
 
 .hero__text {
   font-size: 1.5rem;
   margin-bottom: 40px;
-  font-weight: bold;
-  color: #ffd700;
 }
 
 .btn {
@@ -131,15 +127,4 @@ a {
   font-size: 1.2rem;
 }
 
-/* Footer styles */
-.footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-
-
-
-
+/* Footer
