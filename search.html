@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Maintbuddy | Equipment Lookup & Parts Finder</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<img src="logo.png" alt="Maintbuddy logo">
+		</div>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#">Home</a></li>
+				<li class="nav__item"><a href="#">About</a></li>
+				<li class="nav__item"><a href="#">Services</a></li>
+				<li class="nav__item"><a href="#">Contact</a></li>
+			</ul>
+			<button class="cta">Sign In</button>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<div class="container">
+				<h1 class="hero__title">Maintbuddy</h1>
+				<p class="hero__text">MaintBuddy is a ground breaking time saving app that does all the tedious task of scouring the web for those parts you need.  </p>
+				<button class="btn">Get Started</button>
+			</div>
+		</section>
+		<section class="search">
+			<div class="container">
+				<h2 class="search__title">Search for Equipment Parts</h2>
+				<form id="search-form">
+					<label for="model-input">Model Number:</label>
+					<input type="text" id="model-input" name="model" required>
+					<label for="serial-input">Serial Number:</label>
+					<input type="text" id="serial-input" name="serial" required>
+					<button type="submit" class="btn">Search</button>
+				</form>
+				<div id="results"></div>
+			</div>
+		</section>
+	</main>
+	<script>
+		$(function() {
+			$("#search-form").submit(function(event) {
+				event.preventDefault();
+				const model = $("#model-input").val();
+				const serial = $("#serial-input").val();
+				$.ajax({
+					url: "http://127.0.0.1:5000/search",
+					data: {model: model, serial: serial},
+					success: function(response) {
+						$("#results").html(response);
+					},
+					error: function(xhr, status, error) {
+						$("#results").html(`<p>Error: ${error}</p>`);
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>
